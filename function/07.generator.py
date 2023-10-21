@@ -45,5 +45,5 @@ for i in double_generator:
 
 list_data = [i * 3 for i in range(1, 10000 + 1)]
 generator_data = (i * 3 for i in range(1, 10000 + 1))
-print("list: ", sys.getsizeof(list_data))   # 87624
-print("generator: ", sys.getsizeof(generator_data))  # 112
+print("list: ", sys.getsizeof(list_data))   # 데이터 저장에 필요한 메모리 모두 사용
+print("generator: ", sys.getsizeof(generator_data))  # 필요할 때 값을 만들어서 사용
